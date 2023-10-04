@@ -27,10 +27,10 @@ checksum:
 signs:
   - args:
       - "--batch"
-      - "--detach-sign"
-      - "${artifact}"
       - "--local-user"
       - "{{ .Env.GPG_FINGERPRINT }}"
       - "--output"
       - "${signature}"
+      - "--detach-sign"
+      - "${artifact}"
     artifacts: checksum
