@@ -26,6 +26,7 @@ func resourcePreventDestroy() *schema.Resource {
 			"triggers": {
 				Type:     schema.TypeMap,
 				ForceNew: true,
+				Optional: true,
 			},
 		},
 	}
